@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+// fixed syntax
 import "./NavBar.css";
 import logo from "../../assets/2.png"
 
