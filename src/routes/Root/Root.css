@@ -1,0 +1,16 @@
+.root-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+:root {
+    --black: #141414;
+    --white: #ffffff;
+    --off-white: #f0f0f0;
+    --gray: #dcdcdc;
+    --secondary-font: "EB Garamond", serif;
+  }

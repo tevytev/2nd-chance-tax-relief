@@ -1,0 +1,114 @@
+.our-services-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8rem;
+  height: auto;
+  width: 100%;
+}
+
+.our-services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  height: auto;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 3rem;
+}
+
+.our-services-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.our-services-container-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.service-card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1rem 1rem 0rem;
+  width: auto;
+  transition: 200ms ease;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.col-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.about-tag {
+  background-color: var(--off-white);
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.about-tag h3 {
+  font-weight: 400;
+}
+
+.about-landing-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.about-landing-header-container h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 60%;
+  border-left: 1px solid var(--black);
+  padding: 1rem 1rem;
+}
+
+.about-landing-header-container p {
+  font-size: 1.2rem;
+  width: 100%;
+  color: var(--black);
+  border-radius: 3px;
+  margin-bottom: 2rem;
+}

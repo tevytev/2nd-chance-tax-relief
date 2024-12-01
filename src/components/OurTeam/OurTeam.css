@@ -1,0 +1,78 @@
+.about-culture-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.culture-img {
+  height: 100%;
+  width: 100%;
+  /* aspect-ratio: 1 / 1; */
+  background-image: url(../../assets/img4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(2rem);
+  border-radius: 0 5px 5px 5px;
+}
+
+.team-img {
+  width: 50%;
+  height: auto;
+  transform: translate(0, -3rem);
+}
+
+.about-culture-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+
+.culture-tag {
+  background-color: var(--off-white);
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.culture-tag h3 {
+  font-weight: 400;
+}
+
+.about-culture-text-container h5 {
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem;
+  transform: translateX(-6rem);
+  font-family: "EB Garamond", serif;
+}
+
+.about-culture-text-container p {
+  border-left: solid 1px var(--black);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.culture-btn {
+  padding: 1rem 2rem;
+  background-color: var(--black);
+  border: none;
+  color: white;
+  border-radius: 3px;
+  border: solid var(--black) 1px;
+  cursor: pointer;
+}
+
+.culture-btn:hover {
+  background-color: white;
+  color: var(--black);
+}

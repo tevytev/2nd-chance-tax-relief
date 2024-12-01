@@ -1,0 +1,43 @@
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    /* background-color: rgb(220, 220, 220); */
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+    min-width: 315px;
+    min-height: 215px;
+    margin-bottom: 5%;
+
+}
+
+.icon-container-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.icon-container h5 {
+    font-size: 1.2rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255, 255, 255); */
+    width: 70px;
+    height: 70px;
+    aspect-ratio: 1 / 1;
+    min-width: 70px;
+    border-radius: 8px;
+    color: black;
+    background-color: rgb(240, 240, 240);
+
+
+}

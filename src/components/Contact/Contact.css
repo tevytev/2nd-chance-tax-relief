@@ -1,0 +1,139 @@
+.landing-contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  height: auto;
+  width: 100%;
+  background-image: url("../../assets/hero.jpg");
+  padding: 0 8rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-contact-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 45%;
+  background-color: var(--black);
+  padding: 2rem;
+}
+
+.contact-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact-header-container h3 {
+  font-family: "EB Garamond", serif;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 400;
+}
+
+.contact-header-container p {
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+  padding: 0 0 0 1rem;
+  border-left: solid 1px white;
+
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+
+}
+.input-container div {
+  height: 20%;
+}
+
+.contact-submit {
+  background-color: var(--black);
+  color: #fff;
+  border: 1px solid white;
+  height: 20%;
+  min-height: 50px;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-submit:hover {
+  background-color: white;
+  color: black;
+}
+
+.entry-area {
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.entry-area input {
+  position: absolute;
+  width: 100%;
+  outline: none;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: .75rem;
+  transition: 100ms ease-out;
+  z-index: 1;
+  color: white;
+  font-size: 1rem;
+
+}
+
+.labelline {
+  position: absolute;
+  margin: .75rem;
+  transition: 200ms ease-out;
+  background-color: var(--black);
+  padding: 0 5px;
+  color: white;
+  transform: translate(0px, -5px);
+
+}
+
+.entry-area input:focus,
+.entry-area input:valid {
+}
+
+.entry-area input:focus + .labelline,
+.entry-area input:valid + .labelline {
+  transform: translate(-5px, -28px) scale(.88);
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1165px) {
+  .landing-contact-section {
+    padding: 0 2rem 0 0;
+    background-position: 80% 50%;
+  }
+
+  .landing-contact-section form {
+    width: 50%;
+  }
+}

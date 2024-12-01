@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* line-height: 1.5; */
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1435px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}

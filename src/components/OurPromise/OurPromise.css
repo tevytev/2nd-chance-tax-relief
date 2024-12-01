@@ -1,0 +1,134 @@
+.our-promise-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0;
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.our-promise-container h4 {
+  display: none;
+  font-size: 2.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.our-promise-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.our-promise-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  /* background-color: var(--white); */
+  position: absolute;
+  top: -10rem;
+  padding: 2rem 0;
+  width: 35%;
+  border-radius: 8px 8px 8px 0;
+}
+
+.our-promise-text-container h5 {
+  font-size: 2rem;
+}
+
+.our-promise-text-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.promise-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--off-white);
+  width: 70px;
+  height: 70px;
+  aspect-ratio: 1 / 1;
+  min-width: 70px;
+  border-radius: 8px;
+}
+#promise-subheader {
+  padding-left: 1rem;
+  border-left: 1px solid var(--black);
+  font-weight: 300;
+}
+
+.our-promise-text-container-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 5px;
+  position: absolute;
+  width: 45%;
+  min-width: 472px;
+  height: 400px;
+  top: -10rem;
+  left: 2rem;
+}
+
+.our-promise-text-container-top h5 {
+  font-size: 2rem;
+}
+
+.our-promise-text-container-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 5px;
+  position: absolute;
+  width: 45%;
+  min-width: 472px;
+  height: 400px;
+  bottom: -15rem;
+  right: 2rem;
+}
+
+.our-promise-text-container-bottom h5 {
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .our-promise-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0;
+  }
+  .our-promise-text-container-top {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .our-promise-text-container-bottom {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .our-promise-container h4 {
+    display: block;
+  }
+}
