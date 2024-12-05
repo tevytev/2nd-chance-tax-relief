@@ -12,7 +12,7 @@ import teamImg from "../../assets/img4.jpg"
 
 export default function Home() {
   return (
-    <main className="landing">
+    <main id="home-section" className="landing">
       <section className="hero-section">
         <div className="hero-text-container fade-in-left">
           <div className="hero-text-inner-container">
@@ -23,11 +23,11 @@ export default function Home() {
               Your Side. <span className="emph">But We Are</span>.
             </h1>
             <h2>
-              We advocate for taxpayers and companies <br />
+              We advocate for taxpayers and companies <br className="head-br" />
               in distress dealing with the IRS or the state.
             </h2>
           </div>
-          <a className="hero-contact" href="">
+          <a className="hero-contact" href="#contact-form">
             GET STARTED
           </a>
         </div>

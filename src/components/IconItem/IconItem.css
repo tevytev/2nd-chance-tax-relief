@@ -1,43 +1,80 @@
 .icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  /* background-color: rgb(220, 220, 220); */
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 30%;
+  min-width: 315px;
+  min-height: 215px;
+  margin-bottom: 5%;
+}
+
+.icon-container-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon-container h5 {
+  font-size: 1.2rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(255, 255, 255); */
+  width: 70px;
+  height: 70px;
+  aspect-ratio: 1 / 1;
+  min-width: 70px;
+  border-radius: 8px;
+  color: black;
+  background-color: rgb(240, 240, 240);
+}
+
+.icon-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  gap: 4.5%;
+}
+
+.icon-about-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 3rem;
+    position: relative;
+    /* margin-bottom: 5rem; */
+  }
+  
+  .icon-about-container h4 {
+    font-size: 2.5rem;
+    z-index: 3;
+  }
+
+@media only screen and (max-width: 768px) {
+  .icon-container {
+    width: 100%;
+    margin-bottom: 0;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .icon-card-container {
+    flex-direction: column;
     gap: 1rem;
-    /* background-color: rgb(220, 220, 220); */
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    width: 30%;
-    min-width: 315px;
-    min-height: 215px;
-    margin-bottom: 5%;
-
-}
-
-.icon-container-top {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-.icon-container h5 {
-    font-size: 1.2rem;
-}
-
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgb(255, 255, 255); */
-    width: 70px;
-    height: 70px;
-    aspect-ratio: 1 / 1;
-    min-width: 70px;
-    border-radius: 8px;
-    color: black;
-    background-color: rgb(240, 240, 240);
-
-
+  }
 }

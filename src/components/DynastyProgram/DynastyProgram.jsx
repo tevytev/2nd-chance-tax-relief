@@ -5,6 +5,7 @@ export default function DynastyProgram() {
   return (
     <>
       <div className="dynasty-container">
+        <h4 className="dynasty-header">Protect What Matters Most</h4>
         {/* <i id="dynasty-bg-accent" class="fa-solid fa-file-contract"></i> */}
         <div className="dynasty-img-container">
           <img src={img} alt="" />
@@ -18,7 +19,7 @@ export default function DynastyProgram() {
             programs can help you minimize your tax liability and ensure that
             your loved ones inherit as much of your estate as possible.
           </p>
-          <button>START NOW</button>
+          <a href="#contact-form">START NOW</a>
           {/* <i id="dynasty-bg-accent" class="fa-solid fa-file-signature"></i> */}
           {/* <i id="dynasty-bg-accent" class="fa-solid fa-people-roof"></i> */}
         </div>

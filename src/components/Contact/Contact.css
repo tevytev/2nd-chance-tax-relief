@@ -117,6 +117,10 @@
 
 }
 
+.contact-img {
+  display: none;
+}
+
 .entry-area input:focus,
 .entry-area input:valid {
 }
@@ -135,5 +139,32 @@
 
   .landing-contact-section form {
     width: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .landing-contact-section {
+    padding: 0;
+  }
+  .landing-contact-section form {
+    width: 100%;
+  }
+
+  .contact-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .landing-contact-section {
+    gap: 0;
+    background-image: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .landing-contact-section form {
+    padding: 1rem;
   }
 }

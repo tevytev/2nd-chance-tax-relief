@@ -11,10 +11,10 @@
 }
 
 .our-promise-container h4 {
-  display: none;
+  position: absolute;
+  top: -10rem;
   font-size: 2.5rem;
   padding: 1rem;
-  text-align: center;
 }
 
 .our-promise-container img {
@@ -29,7 +29,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
-  /* background-color: var(--white); */
   position: absolute;
   top: -10rem;
   padding: 2rem 0;
@@ -78,12 +77,12 @@
   width: 45%;
   min-width: 472px;
   height: 400px;
-  top: -10rem;
+  top: -2rem;
   left: 2rem;
 }
 
 .our-promise-text-container-top h5 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .our-promise-text-container-bottom {
@@ -129,6 +128,45 @@
   }
 
   .our-promise-container h4 {
+    position: static;
     display: block;
+    padding: 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .our-promise-text-container-top {
+    min-width: 0;
+  }
+
+  .our-promise-text-container-bottom {
+    min-width: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .our-promise-container {
+    gap: 1rem;
+  }
+  .our-promise-text-container-top {
+    padding: 1.5rem;
+  }
+
+  .our-promise-text-container-top h5 {
+    font-size: 1.5rem;
+  }
+
+  .our-promise-text-container-bottom {
+    padding: 1.5rem;
+  }
+
+  .our-promise-text-container-bottom h5 {
+    font-size: 1.5rem;
+  }
+
+  .our-promise-container img  {
+    margin-bottom: 1rem;
   }
 }

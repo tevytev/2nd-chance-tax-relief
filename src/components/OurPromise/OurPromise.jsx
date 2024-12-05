@@ -1,5 +1,5 @@
 import "./OurPromise.css";
-import img from "../../assets/img2cropped.jpg";
+import img from "../../assets/img2.jpg";
 
 export default function OurPromise() {
   return (

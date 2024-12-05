@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Contact.css";
+import img from "../../assets/hero.jpg";
 
 const EMAIL_REGEX = /^\S+@\S+\.\S+$/;
 const PHONE_REGEX = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
@@ -44,6 +45,7 @@ export default function Contact() {
   return (
     <>
       <section className="landing-contact-section">
+        <img className="contact-img" src={img} alt="" />
         <form id="contact-form" action="">
           <div className="contact-header-container">
             <h3>

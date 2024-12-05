@@ -1,16 +1,22 @@
 import "./OurTeam.css";
-import teamImg from "../../assets/img5.jpg"
-
+import teamImg from "../../assets/img5.jpg";
+import teamImg2 from "../../assets/team.jpg";
 
 export default function OurTeam() {
   return (
     <section className="our-team-section">
+      <div className="our-team-header-container">
+        <h4 className="our-team-header">
+          Tax Resolution Professionals You Can Count On
+        </h4>
+      </div>
+      <img className="team-img-2" src={teamImg2} alt="" />
       <div className="about-culture-container">
         {/* <div className="culture-img"></div> */}
         <img src={teamImg} className="team-img" alt="" />
         <div className="about-culture-text-container">
           <div className="culture-tag">
-            <h3>OUR TEAM</h3>
+            <h4>OUR TEAM</h4>
           </div>
           <h5>
             {/* We will help fight for your <span className="emph">forgiveness</span>. */}
@@ -20,9 +26,14 @@ export default function OurTeam() {
             you get back on track.
           </h5>
           <p>
-            <span style={{
-              fontWeight: 600
-            }}>Our team includes:</span> <br />
+            <span
+              style={{
+                fontWeight: 600,
+              }}
+            >
+              Our team includes:
+            </span>{" "}
+            <br />
             <br />
             <span style={{ fontWeight: 600 }}>Attorneys</span>: Legal experts
             who can represent you in court and negotiate with the IRS. <br />
@@ -46,7 +57,7 @@ export default function OurTeam() {
             <br />
             <br />
           </p>
-          <button className="culture-btn">CONTACT US</button>
+          <a href="#contact-form" className="culture-btn">CONTACT US</a>
         </div>
       </div>
     </section>
