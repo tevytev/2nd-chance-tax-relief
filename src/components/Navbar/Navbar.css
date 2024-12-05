@@ -94,16 +94,16 @@
     justify-content: center;
     align-items: flex-end;
     padding: 10px;
-    gap: 1rem;
+    gap: .8rem;
   }
 
   .burger-line1 {
-    width: 100%;
+    width: 90%;
     height: 1px;
     background-color: var(--black);
   }
   .burger-line2 {
-    width: 80%;
+    width: 65%;
     height: 1px;
     background-color: var(--black);
   }
