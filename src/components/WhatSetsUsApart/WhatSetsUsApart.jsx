@@ -21,7 +21,7 @@ export default function WhatSetsUsApart() {
 
             </ul>
           </div>
-          <img src={img} alt="" />
+          <img src={img} alt="2nd Chance Tax Relief agents working together." />
         </div>
         <div className="icon-card-container">
           <IconItem

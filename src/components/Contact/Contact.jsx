@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import img from "../../assets/tax-resolution-agent-contact.jpg";
 
@@ -6,6 +7,38 @@ const EMAIL_REGEX = /^\S+@\S+\.\S+$/;
 const PHONE_REGEX = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_v7me4ln", "template_b8kb24r", form.current, {
+        publicKey: "VIrThvMXppE6Qt3jQ",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          document.getElementById("contact-firstname").value = "";
+          document.getElementById("contact-lastname").value = "";
+          document.getElementById("phone").value = "";
+          document.getElementById("email").value = "";
+
+          document.getElementById("form-submit").value = 'SUCCESS!'
+          setTimeout(() => {
+            document.getElementById("form-submit").value = "LET'S DO THIS!"
+          }, 3000);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          document.getElementById("form-submit").value = 'FAILED, TRY AGAIN'
+          setTimeout(() => {
+            document.getElementById("form-submit").value = "LET'S DO THIS!"
+          }, 3000);
+        }
+      );
+  };
+
   const [firstname, setFirstname] = useState("");
   const [validFirstname, setValidFirstname] = useState(false);
   const [firstnameFocus, setFirstnameFocus] = useState(false);
@@ -46,13 +79,20 @@ export default function Contact() {
     <>
       <section className="landing-contact-section">
         <img className="contact-img" src={img} alt="" />
-        <form id="contact-form" action="">
+        <form
+          onSubmit={sendEmail}
+          ref={form}
+          id="contact-form"
+          action="2nd Chance Tax Relief agent smiling."
+        >
           <div className="contact-header-container">
             <h3>
-            Experience the 2nd Chance <span className="emph">Difference</span>.
+              Experience the <span className="emph">2nd Chance Difference</span>
+              .
             </h3>
             <p>
-            Contact us today for a free consultation. Let us help you regain financial peace of mind.
+              Contact us today for a free consultation. Let us help you regain
+              financial peace of mind.
             </p>
           </div>
           <div className="input-container">
@@ -66,8 +106,8 @@ export default function Contact() {
                 value={firstname}
                 aria-invalid={validFirstname ? "false" : "true"}
                 type="text"
-                name=""
-                id=""
+                name="first_name"
+                id="contact-firstname"
                 required
               />
               <div className="labelline">Firstname</div>
@@ -83,8 +123,8 @@ export default function Contact() {
                 value={lastname}
                 aria-invalid={validLastname ? "false" : "true"}
                 type="text"
-                name=""
-                id=""
+                name="last_name"
+                id="contact-lastname"
                 required
               />
               <div className="labelline">Lastname</div>
@@ -99,9 +139,9 @@ export default function Contact() {
                 onBlur={() => setPhoneNumberFocus(false)}
                 value={phoneNumber}
                 aria-invalid={validPhoneNumber ? "false" : "true"}
-                type="text"
-                name=""
-                id=""
+                type="tel"
+                name="phone_number"
+                id="phone"
                 required
               />
               <div className="labelline">Phone number</div>
@@ -116,9 +156,9 @@ export default function Contact() {
                 onBlur={() => setEmailFocus(false)}
                 value={email}
                 aria-invalid={validEmail ? "false" : "true"}
-                type="text"
-                name=""
-                id=""
+                type="email"
+                name="email"
+                id="email"
                 required
               />
               <div className="labelline">Email</div>
@@ -137,7 +177,7 @@ export default function Contact() {
               className="contact-submit"
               type="submit"
               name=""
-              id=""
+              id="form-submit"
             />
           </div>
         </form>

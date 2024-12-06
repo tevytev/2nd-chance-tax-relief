@@ -20,11 +20,12 @@ export default function Home() {
             <p>Let us help you!</p>
             <h1>
               The IRS Is Not On <br className="head-br" />
-              Your Side. <span className="emph">But We Are</span>.
+              Your Side. <em className="emph">But We Are</em>.
             </h1>
             <h2>
-              We advocate for taxpayers and companies <br className="head-br" />
-              in distress dealing with the IRS or the state.
+              We assist taxpayers and businesses navigating <br className="head-br" />disputes with the IRS or state authorities.
+              {/* We advocate for taxpayers and companies <br className="head-br" />
+              in distress dealing with the IRS or the state. */}
             </h2>
           </div>
           <a className="hero-contact" href="#contact-form">
@@ -32,7 +33,7 @@ export default function Home() {
           </a>
         </div>
         <div className="hero-img-container slide-left">
-          <img src={hero} alt="" />
+          <img src={hero} alt="2nd Chance Tax Relief agents smiling." />
         </div>
       </section>
       <section id="about-section" className="landing-about-section">

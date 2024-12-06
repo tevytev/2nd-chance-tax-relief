@@ -6,7 +6,7 @@ export default function OurPromise() {
     <>
       <div className="our-promise-container">
         <h2>Expert Tax Solutions with Transparent Pricing</h2>
-        <img src={img} alt="" />
+        <img src={img} alt="2nd Chance Tax Relief client shaking hands with an agent." />
           <div className="our-promise-text-container-top">
             <div className="our-promise-text-header">
               <div className="promise-icon-container">

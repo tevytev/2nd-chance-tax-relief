@@ -125,6 +125,10 @@
 .entry-area input:valid {
 }
 
+.contact-submit:disabled {
+  opacity: 50%;
+}
+
 .entry-area input:focus + .labelline,
 .entry-area input:valid + .labelline {
   transform: translate(-5px, -28px) scale(.88);
@@ -161,6 +165,12 @@
     gap: 0;
     background-image: none;
   }
+  
+
+.contact-submit:hover {
+  background-color: inherit;
+  color: white;
+}
 }
 
 @media only screen and (max-width: 425px) {
