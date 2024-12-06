@@ -9,7 +9,7 @@ export default function OurServices() {
             <h4>OUR SERVICES</h4>
           </div>
           <div className="about-landing-header-container">
-            <h3>Welcome to 2nd Chance Tax Relief</h3>
+            <h2>Welcome to 2nd Chance Tax Relief</h2>
             <p>
               At 2nd Chance Tax Relief, we believe in second chances. We’re here
               to help individuals, companies, and HIGH-VALUE -NET WORTH
@@ -20,33 +20,33 @@ export default function OurServices() {
               <br />
               No matter the size of your tax problem, we’re here to help.
             </p>
-            <h3>We offer a wide range of tax relief services, including:</h3>
+            <h2>We offer a wide range of tax relief services, including:</h2>
           </div>
         </div>
         <div className="our-services-container-right">
             <div className="service-card-container">
               <i class="fa-regular fa-square-check fa-xl"></i>
-              <p>Installment agreements</p>
+              <h3>Installment agreements</h3>
             </div>
             <div className="service-card-container">
               <i class="fa-regular fa-square-check fa-xl"></i>
-              <p>Offers in compromise</p>
+              <h3>Offers in compromise</h3>
             </div>
             <div className="service-card-container">
               <i class="fa-regular fa-square-check fa-xl"></i>
-              <p>Penalty abatement</p>
+              <h3>Penalty abatement</h3>
             </div>
             <div className="service-card-container">
               <i class="fa-regular fa-square-check fa-xl"></i>
-              <p>Innocent spouse relief</p>
+              <h3>Innocent spouse relief</h3>
             </div>
             <div className="service-card-container">
               <i class="fa-regular fa-square-check fa-xl"></i>
-              <p>Tax audits</p>
+              <h3>Tax audits</h3>
             </div>
             <div className="service-card-container">
               <i class="fa-regular fa-square-check fa-xl"></i>
-              <p>Tax liens and levies</p>
+              <h3>Tax liens and levies</h3>
             </div>
         </div>
       </div>

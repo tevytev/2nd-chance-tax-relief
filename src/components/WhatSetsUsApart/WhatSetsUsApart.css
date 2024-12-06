@@ -32,7 +32,7 @@
   padding: 2rem;
 }
 
-.icon-bottom-text-container h5 {
+.icon-bottom-text-container h3 {
     font-size: 1.8rem;
     padding-left: 1rem;
     border-left: solid 1px var(--black);
@@ -71,7 +71,7 @@
     width: 100%;
   }
 
-  .icon-header-container h4 {
+  .icon-header-container h2 {
     font-size: 2rem;
   }
 }
@@ -81,7 +81,7 @@
     padding: 1.5rem;
   }
 
-  .icon-bottom-text-container h5 {
+  .icon-bottom-text-container h3 {
     font-size: 1.5rem;
   }
 

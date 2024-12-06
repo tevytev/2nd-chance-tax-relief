@@ -1,18 +1,17 @@
 import "./WhatSetsUsApart.css";
 import IconItem from "../IconItem/IconItem";
-import img from "../../assets/img9.jpg";
+import img from "../../assets/tax-resolution-team-planning.jpg";
 
 export default function WhatSetsUsApart() {
   return (
     <>
       <div className="icon-about-container">
-        {/* <i id="wsua-accent" class="fa-solid fa-globe fa-2xl"></i> */}
         <div className="icon-header-container">
-          <h4>What Sets Us Apart</h4>
+          <h2>What Sets Us Apart</h2>
         </div>
         <div className="icon-bottom-container">
           <div className="icon-bottom-text-container">
-            <h5>At 2nd Chance Tax Relief, we're different because:</h5>
+            <h3>At 2nd Chance Tax Relief, we're different because:</h3>
             <ul>
                 <li><p>We have over 15 years of experience helping people with tax problems.</p></li>
                 <li><p>We have a team of tax specialists who are dedicated to helping you find the best possible solution for your unique tax situation.</p></li>

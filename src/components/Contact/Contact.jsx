@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Contact.css";
-import img from "../../assets/hero.jpg";
+import img from "../../assets/tax-resolution-agent-contact.jpg";
 
 const EMAIL_REGEX = /^\S+@\S+\.\S+$/;
 const PHONE_REGEX = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;

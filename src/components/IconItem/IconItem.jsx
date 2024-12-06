@@ -7,7 +7,7 @@ export default function IconItem(props) {
     <div className="icon-container">
       <div className="icon-container-top">
         <div className="icon">{icon}</div>
-        <h5>{title}</h5>
+        <h3>{title}</h3>
       </div>
 
       <p>{description}</p>

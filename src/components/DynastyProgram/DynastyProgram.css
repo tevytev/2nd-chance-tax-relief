@@ -69,7 +69,7 @@
   color: var(--black);
 }
 
-.dynasty-text-container h4 {
+.dynasty-text-container h3 {
   font-size: 1.8rem;
   border-left: solid 1px var(--black);
   padding-left: 1rem;

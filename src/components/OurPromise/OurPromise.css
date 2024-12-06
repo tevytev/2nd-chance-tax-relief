@@ -10,7 +10,7 @@
   margin-bottom: 10rem;
 }
 
-.our-promise-container h4 {
+.our-promise-container h2 {
   position: absolute;
   top: -8rem;
   font-size: 2.5rem;
@@ -35,7 +35,7 @@
   border-radius: 8px 8px 8px 0;
 }
 
-.our-promise-text-container h5 {
+.our-promise-text-container h3 {
   font-size: 2rem;
 }
 
@@ -81,7 +81,7 @@
   left: 2rem;
 }
 
-.our-promise-text-container-top h5 {
+.our-promise-text-container-top h3 {
   font-size: 1.8rem;
 }
 
@@ -102,7 +102,7 @@
   right: 2rem;
 }
 
-.our-promise-text-container-bottom h5 {
+.our-promise-text-container-bottom h3 {
   font-size: 1.8rem;
 }
 
@@ -129,7 +129,7 @@
     height: auto;
   }
 
-  .our-promise-container h4 {
+  .our-promise-container h2 {
     position: static;
     display: block;
     padding: 0;
@@ -161,7 +161,7 @@
     padding: 1.5rem;
   }
 
-  .our-promise-text-container-top h5 {
+  .our-promise-text-container-top h3 {
     font-size: 1.5rem;
   }
 
@@ -169,7 +169,7 @@
     padding: 1.5rem;
   }
 
-  .our-promise-text-container-bottom h5 {
+  .our-promise-text-container-bottom h3 {
     font-size: 1.5rem;
   }
 

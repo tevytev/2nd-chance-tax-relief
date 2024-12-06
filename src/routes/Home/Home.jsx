@@ -7,7 +7,7 @@ import OurTeam from "../../components/OurTeam/OurTeam";
 import DynastyProgram from "../../components/DynastyProgram/DynastyProgram";
 import WhatSetsUsApart from "../../components/WhatSetsUsApart/WhatSetsUsApart";
 import OurPromise from "../../components/OurPromise/OurPromise";
-import hero from "../../assets/hero2.jpg";
+import hero from "../../assets/tax-resolution-agents.jpg";
 import teamImg from "../../assets/img4.jpg";
 
 export default function Home() {

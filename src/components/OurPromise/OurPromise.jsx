@@ -1,18 +1,18 @@
 import "./OurPromise.css";
-import img from "../../assets/img2.jpg";
+import img from "../../assets/2nd-chance-client-agreement.jpg";
 
 export default function OurPromise() {
   return (
     <>
       <div className="our-promise-container">
-        <h4>Expert Tax Solutions with Transparent Pricing</h4>
+        <h2>Expert Tax Solutions with Transparent Pricing</h2>
         <img src={img} alt="" />
           <div className="our-promise-text-container-top">
             <div className="our-promise-text-header">
               <div className="promise-icon-container">
                 <i class="fa-solid fa-handshake fa-2xl"></i>
               </div>
-              <h5>Our Promise</h5>
+              <h3>Our Promise</h3>
             </div>
             <p id="promise-subheader">
               Here’s a combined promise incorporating the best of both worlds:
@@ -32,7 +32,7 @@ export default function OurPromise() {
               <div className="promise-icon-container">
               <i class="fa-solid fa-money-check-dollar fa-2xl"></i>
               </div>
-              <h5>Transparency in Pricing</h5>
+              <h3>Transparency in Pricing</h3>
             </div>
             <p id="promise-subheader">
               At 2nd Chance Tax Relief, we believe in complete transparency.

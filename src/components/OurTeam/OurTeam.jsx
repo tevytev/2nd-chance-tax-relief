@@ -1,14 +1,14 @@
 import "./OurTeam.css";
-import teamImg from "../../assets/img5.jpg";
-import teamImg2 from "../../assets/team.jpg";
+import teamImg from "../../assets/tax-resolution-team-agreement.jpg";
+import teamImg2 from "../../assets/tax-resolution-team.jpg";
 
 export default function OurTeam() {
   return (
     <section className="our-team-section">
       <div className="our-team-header-container">
-        <h4 className="our-team-header">
+        <h2 className="our-team-header">
           Tax Resolution Professionals You Can Count On
-        </h4>
+        </h2>
       </div>
       <img className="team-img-2" src={teamImg2} alt="" />
       <div className="about-culture-container">
