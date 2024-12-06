@@ -9,7 +9,7 @@
   background-image: url("../../assets/hero.jpg");
   padding: 0 8rem;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 80% 30%;
   background-repeat: no-repeat;
   background-size: cover;
 }

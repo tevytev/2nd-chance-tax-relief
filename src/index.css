@@ -19,11 +19,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 1435px;
+  position: sticky;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
+  height: auto;
 
 }

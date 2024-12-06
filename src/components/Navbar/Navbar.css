@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--white);
   width: auto;
   height: 140px;
   width: 100%;
   padding: 0 8rem;
+  transition: 200ms ease;
 }
 
 .nav {
@@ -49,15 +51,15 @@
 }
 
 .logo-header-container {
-  height: auto;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .logo-header-container img {
-  height: 200px;
-  transform: translateX(-2rem);
+  height: 75%;
+  /* transform: translateX(-2rem); */
 }
 
 #burger {
@@ -65,6 +67,14 @@
 }
 
 .mobile-nav {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+#toggle {
   display: none;
 }
 
@@ -113,13 +123,13 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: var(--off-white);
+    background-color: var(--black);
     position: fixed;
     width: 65vw;
     height: 100vh;
-    color: var(--white);
     transition: 200ms ease;
     padding: 2rem;
+    z-index: 60;
   }
 
   .mobile-nav ul {
@@ -138,10 +148,63 @@
 
   }
 
-  .mobile-nav ul li a{
+  .mobile-nav ul li a {
     width: 100%;
     border-radius: 5px;
+    color: var(--white);
+    font-size: 1rem;
+
   }
+
+  .mobile-nav ul li a:hover {
+    color: var(--white);
+  }
+
+  /* From Uiverse.io by elijahgummer */ 
+.toggle-checkbox {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 10px;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+  position: relative;
+}
+
+.toggle-checkbox:checked + .hamburger .bar:nth-child(2) {
+  transform: translate(0px, 10px);
+  opacity: 0;
+  transition-delay: 0.1s;
+}
+
+.toggle-checkbox:checked + .hamburger .bar:nth-child(3) {
+  transform: translate(0px, -10px);
+  transition-delay: 0s;
+}
+
+.toggle-checkbox:checked + .hamburger .bar:nth-child(1) {
+  transform: rotate(-45deg) scale(0.7);
+  transition-delay: 0.4s;
+}
+.toggle-checkbox:checked + .hamburger .bar:nth-child(3) {
+  transform: rotate(45deg) scale(0.7);
+  transition-delay: 0.4s;
+}
+
 }
 
 @media only screen and (max-width: 425px) {

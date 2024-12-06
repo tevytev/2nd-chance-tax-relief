@@ -10,6 +10,7 @@
 
 .footer-top-container {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,11 +30,27 @@
 
 .footer-socials-container {
   width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 6rem 1rem 6rem;
+  /* border: solid red; */
+}
+
+.social-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  padding: 2rem 6rem;
+  /* padding: 1rem 0; */
+}
+
+.social-container a {
+  color: var(--black);
+
 }
 
 .footer-bottom-container {

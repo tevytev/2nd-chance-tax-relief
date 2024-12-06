@@ -5,8 +5,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transform: translateY(140px);
     overflow-x: hidden;
-    transition: 200ms ease;
 }
 
 :root {
@@ -15,4 +15,14 @@
     --off-white: #f0f0f0;
     --gray: #dcdcdc;
     --secondary-font: "EB Garamond", serif;
+  }
+
+  .nav-container {
+    /* border: solid blue 10px; */
+    height: auto;
+    width: 100vw;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
   }
