@@ -19,7 +19,7 @@ export default function Home() {
             <span className="hero-accent"></span>
             <p>Let us help you!</p>
             <h1>
-              The IRS Is Not On <br />
+              The IRS Is Not On <br className="head-br" />
               Your Side. <span className="emph">But We Are</span>.
             </h1>
             <h2>

@@ -228,6 +228,7 @@
     position: static;
     border-left: solid 1px var(--black);
     gap: 1rem;
+    border-radius: 0 3px 3px 0;
   }
 
   .hero-accent {
@@ -288,7 +289,7 @@
 
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
   .landing-about-section {
     padding: 5rem 1rem calc(5.5rem + 70px) 1rem;
   }
